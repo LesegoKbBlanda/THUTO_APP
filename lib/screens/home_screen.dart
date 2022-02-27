@@ -33,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Welcome"),
+        title: const Text("Thuto Ke Lesedi"),
         centerTitle: true,
       ),
       body: Center(
@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Image.asset("assets/logo.png", fit: BoxFit.contain),
               ),
               Text(
-                "Welcome Back",
+                "Welcome, let's go",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -68,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 15,
               ),
               ActionChip(
-                  label: Text("Logout"),
+                  label: Text("Proceed"),
                   onPressed: () {
                     logout(context);
                   }),
