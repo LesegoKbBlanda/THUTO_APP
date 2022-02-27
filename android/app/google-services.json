@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "475746985134",
+    "project_id": "thuto-app-1c8cc",
+    "storage_bucket": "thuto-app-1c8cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475746985134:android:2bc73fd7dbaae3728ef93f",
+        "android_client_info": {
+          "package_name": "com.example.thuto_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475746985134-ve47u1pe8ihfu1otu4h09arhna43us0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.thuto_app",
+            "certificate_hash": "873ae1c60a4246ae4ec8a8028bf900ef82b58766"
+          }
+        },
+        {
+          "client_id": "475746985134-guqu0f2lsc5udkoksjr6h78tueqgfc39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSA0-yz9zgRSlzBG_u_E08HggZiKRw8AA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475746985134-guqu0f2lsc5udkoksjr6h78tueqgfc39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

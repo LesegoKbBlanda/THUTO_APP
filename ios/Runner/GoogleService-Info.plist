@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>475746985134-4i06ujagsth5par0hkagdp373iafa83b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.475746985134-4i06ujagsth5par0hkagdp373iafa83b</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>475746985134-ve47u1pe8ihfu1otu4h09arhna43us0q.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA28zrsl37o4uPzlYMgq5qN--pNgdvPbJY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>475746985134</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.thutoApp</string>
+	<key>PROJECT_ID</key>
+	<string>thuto-app-1c8cc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>thuto-app-1c8cc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:475746985134:ios:98d91bff9fe0f1f08ef93f</string>
+</dict>
+</plist>
