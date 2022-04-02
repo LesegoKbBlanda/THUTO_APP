@@ -35,8 +35,16 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavBar(),
       appBar: AppBar(
+        elevation: 0,
+        // im not sure if the back button is necesary here
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 228, 236, 229)),
+          onPressed: () {
+            // passing this to our root
+            //Navigator.of(context).pop();
+          },
+        ),
         title: const Text("Thuto Ke Lesedi"),
         centerTitle: true,
       ),
@@ -74,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ActionChip(
                   label: Text("Proceed"),
                   onPressed: () {
-                    logout(context);
+                    proceed(context);
                   }),
             ],
           ),
@@ -84,8 +92,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   // the logout function
-  Future<void> logout(BuildContext context) async {
-    await FirebaseAuth.instance.signOut();
+  Future<void> proceed(BuildContext context) async {
+    //await FirebaseAuth.instance.signOut();
     Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => Subject()));
   }

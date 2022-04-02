@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:thuto_app/flashcardmain.dart';
 import 'package:thuto_app/screens/login_screen.dart';
+import 'package:thuto_app/screens/main_menu.dart';
+import 'package:thuto_app/todomain.dart';
 
 class NavBar extends StatelessWidget {
   
@@ -32,40 +35,46 @@ class NavBar extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.favorite),
+            leading: Icon(Icons.task),
             title: Text('To Do List'),
             onTap: () => Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => LoginScreen())),
+        MaterialPageRoute(builder: (context) => Mytodo())),
           ),
           ListTile(
-            leading: Icon(Icons.person),
-            title: Text('Friends'),
+            leading: Icon(Icons.track_changes),
+            title: Text('Track progress'),
             onTap: () => null,
           ),
           ListTile(
-            leading: Icon(Icons.share),
-            title: Text('Share'),
+            leading: Icon(Icons.book),
+            title: Text('Exam papers'),
             onTap: () => null,
           ),
           ListTile(
-            leading: Icon(Icons.notifications),
-            title: Text('Request'),
-          ),
-          Divider(),
-          ListTile(
-            leading: Icon(Icons.settings),
-            title: Text('Settings'),
-            onTap: () => null,
+            leading: Icon(Icons.book),
+            title: Text('Mock papers'),
           ),
           ListTile(
-            leading: Icon(Icons.description),
-            title: Text('Policies'),
+            leading: Icon(Icons.card_membership),
+            title: Text('Flashcards'),
+            onTap: () => Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => MyFlashcard())),
+          ),
+          ListTile(
+            leading: Icon(Icons.quiz),
+            title: Text('Quiz'),
+            onTap: () => Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => MainMenu())),
+          ),
+          ListTile(
+            leading: Icon(Icons.chat),
+            title: Text('Discussion forum'),
             onTap: () => null,
           ),
           Divider(),
           ListTile(
             title: Text('log Out'),
-            leading: Icon(Icons.exit_to_app),
+            leading: Icon(Icons.logout),
             onTap: () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => LoginScreen())),
           ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:thuto_app/model/subject_model.dart';
 import 'package:thuto_app/screens/dashboard/dashboard.dart';
 import 'package:thuto_app/screens/dashboard/subjectDetail.dart';
+import 'package:thuto_app/screens/home_screen.dart';
 import 'package:thuto_app/screens/navbar.dart';
 
 class Subject extends StatefulWidget {
@@ -27,7 +28,18 @@ class _SubjectState extends State<Subject> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Select subject of preference'),),
+     backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        elevation: 0,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 244, 245, 247)),
+          onPressed: () {
+            // passing this to our root
+            Navigator.pop(context);
+          },
+        ),
+      ),
       body: ListView.builder(
            itemCount: subjectdata.length,
           itemBuilder: (context,index){

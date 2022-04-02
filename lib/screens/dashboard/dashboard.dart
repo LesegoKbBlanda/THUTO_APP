@@ -39,56 +39,12 @@ class _GridDashboardState extends State<GridDashboard> {
       appBar: AppBar(
         title: const Text("Thuto Ke Lesedi"),
         centerTitle: true,
+        //tsenya body descriptionnyana 
       ),
-      body: Center(
-        child: Padding(
-          padding: EdgeInsets.all(20),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              SizedBox(
-                height: 150,
-                child: Image.asset("assets/logo.png", fit: BoxFit.contain),
-              ),
-              Text(
-                "Welcome, let's go",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Text("${loggedInUser.firstName} ${loggedInUser.secondName}",
-                  style: TextStyle(
-                    color: Colors.black54,
-                    fontWeight: FontWeight.w500,
-                  )),
-              Text("${loggedInUser.email}",
-                  style: TextStyle(
-                    color: Colors.black54,
-                    fontWeight: FontWeight.w500,
-                  )),
-              SizedBox(
-                height: 15,
-              ),
-              ActionChip(
-                  label: Text("Proceed"),
-                  onPressed: () {
-                    logout(context);
-                  }),
-            ],
-          ),
-        ),
-      ),
-    );
+      
+      );
   }
 
-  // the logout function
-  Future<void> logout(BuildContext context) async {
-    await FirebaseAuth.instance.signOut();
-    Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => Subject()));
-  }
 }
 /*import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
